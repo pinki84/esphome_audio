@@ -20,7 +20,7 @@ ADFMediaPlayer = esp_adf_ns.class_(
     "ADFMediaPlayer", ADFPipelineController, media_player.MediaPlayer, cg.Component
 )
 
-CONFIG_SCHEMA = media_player.MEDIA_PLAYER_SCHEMA.extend(
+CONFIG_SCHEMA = media_player._MEDIA_PLAYER_SCHEMA.extend(
     {
         cv.GenerateID(): cv.declare_id(ADFMediaPlayer),
     }
